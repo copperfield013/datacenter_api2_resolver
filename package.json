@@ -1,0 +1,27 @@
+{
+  "name": "datacenter_api2_resolver",
+  "version": "1.0.16",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cleanLib": "./node_modules/.bin/rimraf lib",
+    "bableBuild": "./node_modules/.bin/babel src --out-dir lib",
+    "prepublish": "npm run cleanLib && npm run bableBuild"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/copperfield013/datacenter_api2_resolver.git"
+  },
+  "author": "copperfield",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/copperfield013/datacenter_api2_resolver/issues"
+  },
+  "homepage": "https://github.com/copperfield013/datacenter_api2_resolver#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "rimraf": "^2.6.3"
+  }
+}
